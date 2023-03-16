@@ -2,7 +2,7 @@
   "name": "generate-rtl-unit-test",
   "displayName": "generate-rtl-unit-test",
   "description": "Generate a unit test for a given React component using React Testing Library and TypeScript.",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "publisher": "Metacrafters",
   "engines": {
     "vscode": "^1.76.0"
@@ -28,6 +28,16 @@
           "group": "Other"
         }
       ]
+    },
+    "configuration": {
+      "title": "Generate RTL Unit Test",
+      "properties": {
+        "generateUnitTest.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for OpenAI GPT-3 service"
+        }
+      }
     }
   },
   "scripts": {
